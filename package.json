@@ -1,0 +1,64 @@
+{
+  "name": "dsh-mp4",
+  "version": "0.1.0",
+  "description": "Preview MP4, M4V and MOV videos in the DSH right sidebar: a native video player replaces the \u201cthis file type cannot be previewed\u201d placeholder.",
+  "type": "module",
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shshjjj456/dsh-mp4.git"
+  },
+  "homepage": "https://github.com/shshjjj456/dsh-mp4#readme",
+  "bugs": {
+    "url": "https://github.com/shshjjj456/dsh-mp4/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "video",
+    "mp4",
+    "preview",
+    "sidebar"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-documentpreview"
+      ]
+    }
+  }
+}

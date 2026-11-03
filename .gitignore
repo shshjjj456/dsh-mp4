@@ -1,0 +1,10 @@
+# 依赖与构建产物（本插件没有构建步骤，这里是给以后留的位置）
+node_modules/
+
+# npm 打包产物
+*.tgz
+
+# 编辑器 / 系统杂物
+.DS_Store
+Thumbs.db
+*.log
