@@ -1,6 +1,6 @@
 {
   "name": "dsh-mp4",
-  "version": "0.1.0",
+ "version": "0.1.1",
   "description": "Preview MP4, M4V and MOV videos in the DSH right sidebar: a native video player replaces the \u201cthis file type cannot be previewed\u201d placeholder.",
   "type": "module",
   "license": "MIT",
